@@ -73,7 +73,31 @@ src="https://www.facebook.com/tr?id=2936974263245832&ev=PageView
 
 <!-- LEGAL SECTION START -->
 <div class="content-section">
-    <div class="content-container"><p>Have some questions about the Smoothie Diet? Drop me an email at: support@healthcoachdrew.com and I'll get back to you as soon as I can. If you are emailing about your order please include your order # that was in the email you received after purchasing.</p>
+    <div class="content-container">
+	    
+	    <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+	    
+	    
+	    <p>Have some questions about the Smoothie Diet? Drop me an email at: support@healthcoachdrew.com and I'll get back to you as soon as I can. If you are emailing about your order please include your order # that was in the email you received after purchasing.</p>
       <p>Please note that I do get a lot of email so it may take 24-48 hours to get a reply. Thanks!    </p>
     </div>
 </div>
