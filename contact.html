@@ -45,10 +45,9 @@ src="https://www.facebook.com/tr?id=2936974263245832&ev=PageView
 </noscript>
 <!-- End Facebook Pixel Code -->
 
-	
-	<style>
-p[type=text], select {
-  width: 50%;
+<style>
+input[type=text], select {
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -57,7 +56,7 @@ p[type=text], select {
   box-sizing: border-box;
 }
 
-button[type=submit] {
+input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
   color: white;
@@ -68,7 +67,7 @@ button[type=submit] {
   cursor: pointer;
 }
 
-button[type=submit]:hover {
+input[type=submit]:hover {
   background-color: #45a049;
 }
 
@@ -78,8 +77,6 @@ div {
   padding: 20px;
 }
 </style>
-	
-	
 	
 	
 
@@ -113,18 +110,18 @@ div {
     <div class="content-container">
 	<div>    
 	    <form name="contact" method="POST" data-netlify="true">
-  <p style="text-align:center;">
+  <p>
     <input type="text" name="name" placeholder="Your Name" />
   </p>
-  <p style="text-align:center;">
+  <p>
     <input type="email" name="email" placeholder="Type Your Eamil..." />
   </p>
   
-  <p style="text-align:center;">
+  <p>
     <textarea name="message" placeholder="Type Your Message"></textarea>
   </p>
   <p>
-   <center> <button type="submit">Send</button></center>
+   <button type="submit">Send</button>
   </p>
 </form>
 	    </div>    
